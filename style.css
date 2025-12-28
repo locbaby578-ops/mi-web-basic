@@ -1,0 +1,326 @@
+/* --- ESTILOS GLOBALES --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    background-color: #191919;
+    color: #fff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- BARRA DE NAVEGACIÓN --- */
+.navbar {
+    background-color: #242424;
+    padding: 0 24px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 60px;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.login-button, .signup-button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.login-button {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.login-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.signup-button {
+    background-color: #00bfff;
+    color: #fff;
+    border: none;
+}
+
+.signup-button:hover {
+    background-color: #0099cc;
+}
+
+/* --- SECCIÓN HERO (BANNER PRINCIPAL) --- */
+.hero-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 50px auto;
+    padding: 0 24px;
+    gap: 40px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #0fbc63;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #0da053;
+}
+
+.hero-image img {
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+/* --- SECCIÓN DE JUEGOS --- */
+.games-section, .categories-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 50px 24px;
+}
+
+.games-section h2, .categories-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.games-carousel {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.game-card {
+    background-color: #242424;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+}
+
+.game-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.game-card h3 {
+    margin: 10px 0;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.game-stats .stat {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.game-stats .stat-label {
+    font-size: 14px;
+    color: #aaa;
+    display: block;
+}
+
+/* --- SECCIÓN DE CATEGORÍAS --- */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.category-card {
+    background-color: #242424;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.category-card:hover {
+    background-color: #333;
+}
+
+/* --- FOOTER --- */
+.footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #242424;
+    margin-top: 50px;
+}
+
+/* --- ESTILOS DE LA PÁGINA DE INICIO DE SESIÓN --- */
+.login-page {
+    background-color: #e8e8e8;
+    color: #393939;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-box .logo img {
+    width: 175px;
+    margin-bottom: 20px;
+}
+
+.login-box h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.input-group-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #0099cc;
+}
+
+.login-footer {
+    margin-top: 20px;
+}
+
+.login-footer a {
+    color: #00bfff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+/* --- ESTILOS PARA EL AUTOCOMPLETAR (SUGERENCIAS) --- */
+#user-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+    display: none;
+}
+
+.suggestion-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+.suggestion-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.suggestion-username {
+    font-size: 14px;
+    color: #333;
+}
